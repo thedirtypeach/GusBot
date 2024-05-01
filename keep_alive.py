@@ -5,6 +5,7 @@ from threading import Thread # Import Thread, which enables concurrent execution
 # Create a Flask object named, "app".
 app = Flask('') # This creates a Flask object named, "app" which will handle incoming HTTP requests and route them appropriately.
 
+# ---- FUNCTIONS ----
 # Create the home page by calling the route() function, which is built into the Flask object.
 @app.route('/') # This is a decorator which defines the route for the root URL ("/"). When a user accesses the root of the URL, the home() function is called.
 def home():
