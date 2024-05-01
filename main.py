@@ -3,6 +3,7 @@ This python project creates a Discord chat bot by leveraging both OpenAI and Dis
 '''
 
 # ---- LIBRARIES ----
+# Import necessary libaries
 from openai import OpenAI
 import discord
 from discord.ext import commands
@@ -11,7 +12,6 @@ from dotenv import load_dotenv
 from keep_alive import keep_alive
 
 # ---- CLASSES ----
-
 # Create a class named, "BingBot" to be used to create an instance of a discord bot
 class BingBot(discord.Client):
     # Override the on_ready function
@@ -32,7 +32,6 @@ class BingBot(discord.Client):
 
 
 # ---- FUNCTIONS ----
-
 # Create a function to make API requests to OpenAI. Read more here: https://platform.openai.com/docs/api-reference/chat
 def generate_response(prompt):
 
